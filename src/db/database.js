@@ -24,7 +24,7 @@ export const initDB = async () => {
     );`;
   try {
     await pool.query(reports);
-    console.log("Accounts table created");
+    console.log("tables created");
   } catch (err) {
     console.log(err);
   }
