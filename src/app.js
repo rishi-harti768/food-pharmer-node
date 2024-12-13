@@ -4,7 +4,6 @@ import dotenv from "dotenv";
 import { initDB } from "./db/database.js";
 
 import reportRoutes from "./routes/report.routes.js";
-import { genImgReport } from "./utils/openAIServices.js";
 
 dotenv.config();
 
@@ -18,7 +17,6 @@ app.use(express.static("public"));
 app.use("/report", reportRoutes);
 
 initDB();
-
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);

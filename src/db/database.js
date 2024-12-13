@@ -20,7 +20,8 @@ export const initDB = async () => {
       id SERIAL PRIMARY KEY,
       upload_time varchar(255) NOT NULL,
       image varchar(255) NOT NULL,
-      ocr_text varchar(255) NOT NULL
+      ocr_text varchar(255) NOT NULL,
+      analysis json NOT NULL
     );`;
   try {
     await pool.query(reports);
