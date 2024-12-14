@@ -10,7 +10,7 @@ dotenv.config();
 export const newReport = async (req, res) => {
   try {
     if (!req.file) {
-      return res.status(400).json({ message: "No file provided" });
+      res.status(400).json({ message: "No file provided" });
       return;
     }
 
