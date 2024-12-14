@@ -18,8 +18,10 @@ export const initDB = async () => {
   const reports = `
     CREATE TABLE IF NOT EXISTS reports (
       id SERIAL PRIMARY KEY,
+      product_name varchar(255) NOT NULL,
       upload_time varchar(255) NOT NULL,
       image varchar(255) NOT NULL,
+      image_quality varchar(255) NOT NULL,
       ocr_text varchar(255) NOT NULL,
       analysis json NOT NULL
     );`;
