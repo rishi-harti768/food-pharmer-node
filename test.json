@@ -1,0 +1,58 @@
+{
+  "summary": "Processed food high in refined grains and added sugar; potentially unhealthy.",
+  "ingredientsAnalysis": [
+    {
+      "name": "Enriched unbleached flour (wheat flour, malted barley flour, ascorbic acid, niacin, reduced iron, thiamin mononitrate, riboflavin, folic acid)",
+      "quantity": "Unspecified",
+      "safetyLevel": "Unhealthy",
+      "feedback": "Refined wheat flour is low in fiber and nutrients compared to whole wheat.  Added nutrients partially compensate, but it's still a processed ingredient."
+    },
+    {
+      "name": "Sugar",
+      "quantity": "Unspecified",
+      "safetyLevel": "Unhealthy",
+      "feedback": "Added sugar contributes to empty calories and can negatively impact health."
+    },
+    {
+      "name": "Degermed yellow cornmeal",
+      "quantity": "Unspecified",
+      "safetyLevel": "Unhealthy",
+      "feedback": "Degerming removes beneficial nutrients from the corn.  Whole cornmeal would be a healthier alternative."
+    },
+    {
+      "name": "Salt",
+      "quantity": "Unspecified",
+      "safetyLevel": "Unhealthy",
+      "feedback": "Excessive salt intake is linked to high blood pressure.  The amount needs to be determined for accurate assessment."
+    },
+    {
+      "name": "Leavening (baking soda, sodium acid pyrophosphate)",
+      "quantity": "Unspecified",
+      "safetyLevel": "Unhealthy",
+      "feedback": "These are processing aids, generally safe in moderation, but contribute to the processed nature of the food."
+    },
+    {
+      "name": "Soybean oil",
+      "quantity": "Unspecified",
+      "safetyLevel": "Unhealthy",
+      "feedback": "Soybean oil's high omega-6 content can be inflammatory for some individuals when consumed in excess."
+    },
+    {
+      "name": "Honey powder",
+      "quantity": "Unspecified",
+      "safetyLevel": "Healthy",
+      "feedback": "A natural sweetener, generally healthier than refined sugar, but still contains calories."
+    },
+    {
+      "name": "Natural flavor",
+      "quantity": "Unspecified",
+      "safetyLevel": "Unhealthy",
+      "feedback": "This is a vague term that could indicate many different ingredients, some of which may be unhealthy."
+    }
+  ],
+  "result": {
+    "overAllSafety": "Unhealthy",
+    "healthyRate": 30,
+    "overAllFeedback": "This product contains a high proportion of refined grains, added sugar, and potentially unhealthy oils.  While some healthier ingredients are present, the overall processing and refined nature make it an unhealthy choice for regular consumption.  Looking for whole-grain alternatives would improve nutritional value significantly."
+  }
+}

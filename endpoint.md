@@ -60,14 +60,16 @@
       "product_name": "xyz",
       "upload_time": "2024-12-14T12:05:41.000Z",
       "image_quality": "73",
-      "image": "/reportImgs/1734155618648.jpg"
+      "image": "/reportImgs/1734155618648.jpg",
+      "summary": "summary"
     },
     {
       "id": 2,
       "product_name": "abc",
       "upload_time": "2024-12-14T12:05:41.000Z",
       "image_quality": "70",
-      "image": "/reportImgs/1734155810831.jpg"
+      "image": "/reportImgs/1734155810831.jpg",
+      "summary": "summary"
     }
   ]
   ```

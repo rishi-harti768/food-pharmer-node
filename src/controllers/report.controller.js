@@ -52,11 +52,13 @@ export const newReport = async (req, res) => {
 export const fetchAllReports = async (req, res) => {
   try {
     let allReports = await pool.query(
-      "SELECT id, product_name, upload_time, image_quality, image FROM reports;"
+      "SELECT id, product_name, upload_time, image_quality, analysis, image FROM reports;"
     );
     allReports.rows.forEach((report) => {
       report.upload_time = new Date(Date(report.upload_time).toString());
       report.image = `/reportImgs/${report.image}`;
+      report.summary = report.analysis.summary;
+      delete report.analysis;
     });
     res.status(200).json(allReports.rows);
   } catch (err) {
