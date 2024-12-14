@@ -11,12 +11,14 @@ export const newReport = async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ message: "No file provided" });
+      return;
     }
 
     const { product_name } = req.body;
 
     if (!product_name) {
-      return res.status(400).json({ message: "Product name not provided" });
+      res.status(400).json({ message: "Product name not provided" });
+      return;
     }
 
     const upload_time = req.file.filename.split(".")[0];
@@ -24,7 +26,8 @@ export const newReport = async (req, res) => {
     const ocrFileName = req.file.filename.split(".")[0] + ".txt";
 
     if (!imageFileName || !ocrFileName) {
-      return res.status(400).json({ message: "Invalid file name" });
+      res.status(400).json({ message: "Invalid file name" });
+      return;
     }
 
     const { text, confidence } = await readImage(imageFileName, ocrFileName);
@@ -71,6 +74,7 @@ export const fetchReport = async (req, res) => {
     const { id } = req.body;
     if (!id) {
       res.status(400).json({ message: "Report id not provided" });
+      return;
     }
     const report = await pool.query("SELECT * FROM reports WHERE id = $1;", [
       id,
