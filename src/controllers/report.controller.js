@@ -61,6 +61,7 @@ export const fetchAllReports = async (req, res) => {
       report.upload_time = new Date(Date(report.upload_time).toString());
       report.image = `/reportImgs/${report.image}`;
       report.summary = report.analysis.summary;
+      report.healthStatus = report.analysis.result.overAllSafety;
       delete report.analysis;
     });
     res.status(200).json(allReports.rows);
